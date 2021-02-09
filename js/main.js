@@ -5,7 +5,11 @@
                 i++; $(this.element).addClass('item-animate'); setTimeout(function () {
                     $('body .animate-box.item-animate').each(function (k) {
                         var el = $(this); setTimeout(function () {
-                            var effect = el.data('animate-effect'); if (effect === 'fadeIn') { el.addClass('fadeIn animated'); } else if (effect === 'fadeInLeft') { el.addClass('fadeInLeft animated'); } else if (effect === 'fadeInRight') { el.addClass('fadeInRight animated'); } else { el.addClass('fadeInUp animated'); }
+                            var effect = el.data('animate-effect'); 
+                            if (effect === 'fadeIn') { el.addClass('fadeIn animated'); } 
+                            else if (effect === 'fadeInLeft') { el.addClass('fadeInLeft animated'); } 
+                            else if (effect === 'fadeInRight') { el.addClass('fadeInRight animated'); } 
+                            else { el.addClass('fadeInUp animated'); }
                             el.removeClass('item-animate');
                         }, k * 200, 'easeInOutExpo');
                     });
@@ -14,7 +18,8 @@
         }, { offset: '85%' });
     }; var burgerMenu = function () { $('.js-colorlib-nav-toggle').on('click', function (event) { event.preventDefault(); var $this = $(this); if ($('body').hasClass('offcanvas')) { $this.removeClass('active'); $('body').removeClass('offcanvas'); } else { $this.addClass('active'); $('body').addClass('offcanvas'); } }); }; var mobileMenuOutsideClick = function () { $(document).click(function (e) { var container = $("#colorlib-aside, .js-colorlib-nav-toggle"); if (!container.is(e.target) && container.has(e.target).length === 0) { if ($('body').hasClass('offcanvas')) { $('body').removeClass('offcanvas'); $('.js-colorlib-nav-toggle').removeClass('active'); } } }); $(window).scroll(function () { if ($('body').hasClass('offcanvas')) { $('body').removeClass('offcanvas'); $('.js-colorlib-nav-toggle').removeClass('active'); } }); }; var clickMenu = function () {
         $('#navbar a:not([class="external"])').click(function (event) {
-            var section = $(this).data('nav-section'), navbar = $('#navbar'); if ($('[data-section="' + section + '"]').length) { $('html, body').animate({ scrollTop: $('[data-section="' + section + '"]').offset().top - 55 }, 500); }
+            var section = $(this).data('nav-section'), navbar = $('#navbar'); 
+            if ($('[data-section="' + section + '"]').length) { $('html, body').animate({ scrollTop: $('[data-section="' + section + '"]').offset().top - 55 }, 500); }
             if (navbar.is(':visible')) { navbar.removeClass('in'); navbar.attr('aria-expanded', 'false'); $('.js-colorlib-nav-toggle').removeClass('active'); }
             event.preventDefault(); return false;
         });
