@@ -1,0 +1,50 @@
+{
+  "name": "phisut.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --mode=development",
+    "pro": "webpack --mode=production",
+    "production": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KigITS/phisut.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KigITS/phisut.github.io/issues"
+  },
+  "homepage": "https://github.com/KigITS/phisut.github.io#readme",
+  "devDependencies": {
+    "@webpack-cli/init": "^1.1.3",
+    "autoprefixer": "^10.2.4",
+    "postcss-loader": "^5.0.0",
+    "sass": "^1.32.7",
+    "sass-loader": "^11.0.1",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.2.4",
+    "bootstrap": "^4.6.0",
+    "css-loader": "^5.0.2",
+    "cssnano": "^4.1.10",
+    "flexslider": "^2.7.2",
+    "jquery-countto": "^1.2.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "lodash": "^4.17.20",
+    "mini-css-extract-plugin": "^1.3.6",
+    "modernizr": "^3.11.4",
+    "node-sass": "^5.0.0",
+    "npm-modernizr": "^2.8.3",
+    "owl.carousel": "^2.3.4",
+    "sticky-kit": "^1.1.3",
+    "style-loader": "^2.0.0",
+    "waypoints": "^4.0.1"
+  }
+}
