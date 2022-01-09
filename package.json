@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack --mode=development",
+    "watch": "webpack --watch --mode=development ",
     "pro": "webpack --mode=production",
     "production": "webpack --mode=production"
   },
